@@ -1,12 +1,11 @@
-h2 {
-  font-family: "Fira Sans Condensed", sans-serif;
+.titre-global {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 70px;
   padding: 0 25px 20px;
 }
 
 body {
-  height: 100vh;
   font-family: "Puritan", sans-serif;
 }
 
@@ -85,7 +84,7 @@ nav {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   nav {
     padding: 15px 20px;
     position: relative;
@@ -203,47 +202,84 @@ header {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.247);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .accueil-txt-container {
   width: 90%;
   max-width: 1300px;
   min-width: 300px;
-  height: 700px;
+}
+
+.titre-global {
+  color: #fff;
+  padding: 80px 0 30px;
 }
 
 .main-h1 {
-  padding: 150px 0 40px;
-  font-size: 140px;
+  padding: 30px 0 100px;
+  font-size: 150px;
   color: #fff;
   font-family: "Bitter", serif;
   letter-spacing: 2px;
 }
 
-h2 {
-  color: #fff;
+.accueil-infos {
+  width: 700px;
+  height: 300px;
+  padding: 25px auto;
+  background: #92bcea;
+  display: flex;
+  border-radius: 5px;
 }
 
-.cont-medias {
+.scroll-btn {
+  width: 90px;
+  height: 90px;
   position: absolute;
-  left: 3%;
-  top: 75%;
-}
-
-.media {
-  margin: 20px 0;
-  width: 80px;
-  height: 80px;
-  border: 1px solid #f1f1f1;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
   background: #2B303A;
-  border-radius: 50%;
+  border-radius: 50px;
+  border: 1px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.scroll-btn i {
+  font-size: 60px;
+  color: #fff;
+}
+
+.cont-medias {
+  position: absolute;
+  right: 3%;
+  top: 75%;
+}
+
+.media {
+  margin: 20px 0;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #f1f1f1;
+  background: #2B303A;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+
 .media img {
   width: 35px;
+}
+
+.media:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
