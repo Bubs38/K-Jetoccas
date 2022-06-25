@@ -40,7 +40,7 @@
 
     <div class="navlinks-container">
       <a href="#" aria-current="page">Accueil</a>
-      <a href="#">Presentation</a>
+      <a href="#presentation">Presentation</a>
       <a href="#">Achats / Ventes</a>
       <a href="#">Nos Photos</a>
       <a href="#">Contact</a>
@@ -56,19 +56,17 @@
 
   <!-- Accueil -->
 
-  <header>
+  <header id="accueil">
     <div class="accueil-opacite">
       <div class="accueil-text-container">
-        <h2 class="titre-global">Achat et vente de palettes à Grenoble</h2>
+        <h2 class="main-h2">Achat et vente de palettes à Grenoble</h2>
         <h1 class="main-h1"> K'Jetoccas </h1>
       </div>
 
-
-      
       <div class="scroll-btn">
         <a href="#"><i class="fa-solid fa-chevron-down"></a></i>
       </div>
-      
+
       <div class="cont-medias">
         <div class="media">
           <a href="#">
@@ -82,8 +80,15 @@
         </div>
       </div>
     </div>
-    
-    <!-- <div class="accueil-infos">
+  </header>
+
+
+  <!-- Accueil Infos -->
+
+  <section class="accueil-infos">
+    <h2 class="titre-global">Nos avantages</h2>
+    <hr class="separation">
+    <div class="infos-container">
       <div class="infos">
         <i class="fa-solid fa-dolly"></i>
         <p>Chargement Rapide</p>
@@ -94,16 +99,57 @@
       </div>
       <div class="infos">
         <i class="fa-solid fa-chair"></i>
-        <p>Vente de palettes pour la confection de meubles</p>
+        <p>Pour la confection de meubles</p>
       </div>
       <div class="infos">
         <i class="fa-solid fa-map-location-dot"></i>
         <p>Facile d'accès</p>
       </div>
-    </div> -->
-    
-    <script src="./scripts/app.js">
-    </script>
+    </div>
+  </section>
+
+
+  <!-- Présentation entreprise -->
+
+  <section class="presentation">
+    <h2  id="presentation" class="titre-global">Qui sommes nous ? </h2>
+    <hr class="separation">
+  
+      <div class="presentation-container">
+  
+        <div class="txt-presentation">
+          <p>Entreprise familiale</p>
+          <hr class="underline-blue">
+          <p>K'Jetoccas est spécialisée dans la collecte, la réparation, l'achat et la vente de palettes à Grenoble depuis plus de 40 ans.</p>
+          <p>
+            Grâce à des moyens de manutention spécifiques et une surface extérieure goudronnée et bien aménagéenous vous garantissons un accès facile et un chargement efficace. 
+          </p>
+        </div>
+        <div class="img-presentation img1"></div>
+  
+        <div class="img-presentation img2"></div>
+        <div class="txt-presentation">
+          <p>Pour les professionnels</p>
+          <hr class="underline-blue">
+          <p>Vous êtes une entreprise et vous avez besoin d'acheter ou de louer des palettes pour votre activité ? </p>
+          <p>Ne cherchez plus ! Ici, nous avons un espace de stockage comprenant plus de 30 000 palettes de tous types pour vous assurer un service de qualité toute l'année !</p>
+        </div>
+  
+        <div class="txt-presentation">
+          <p>Pour les particuliers</p>
+          <hr class="underline-blue">
+          <p>Nous avons pris conscience de la hausse de la demande pour la fabrication de meubles en palettes.
+          </p>
+          <p>Notre équipe est à votre disposition pour vous conseiller et vous proposer ce qui correspond à vos besoins. </p>
+        </div>
+        <div class="img-presentation img3"></div>
+  
+      </div>
+
+  </section>
+
+  <script src="./scripts/app.js">
+  </script>
 </body>
 
 </html>

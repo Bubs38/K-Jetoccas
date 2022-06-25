@@ -1,6 +1,6 @@
 body {
   font-family: $puritan;
-  width: 100%;
+  // width: 100%;
 }
 
 
@@ -219,7 +219,7 @@ header {
   // min-width: 300px;
 }
 
-.titre-global {
+.main-h2 {
   font-family: $montserrat;
   text-align: center;
   font-size: 70px;
@@ -228,7 +228,7 @@ header {
 }
 
 .main-h1 {
-  padding: 80px 30px 100px;
+  padding: 80px 30px 150px;
   font-size: 150px;
   color: #fff;
   font-family: $bitter;
@@ -256,6 +256,7 @@ header {
   right: 3%;
   top: 75%;
 }
+
 .media {
   margin: 20px 0;
   width: 70px;
@@ -268,6 +269,7 @@ header {
   justify-content: center;
   transition: transform 0.2s ease-in-out;
 }
+
 .media img {
   width: 35px;
 }
@@ -280,33 +282,40 @@ header {
 // Header Responsive 
 
 @media screen and (max-width: 1350px) {
-  .titre-global {
+  .main-h2 {
     font-size: 60px;
   }
+  
   .main-h1 {
     font-size: 130px;
   }
 }
+
 @media screen and (max-width: 1150px) {
-  .titre-global {
+  .main-h2 {
     font-size: 50px;
   }
+  
   .main-h1 {
     font-size: 120px;
-    padding: 90px 30px 100px;
+    padding: 90px 30px 150px;
   }
+  
   .media {
     margin: 15px 0;
     width: 50px;
     height: 50px;
   }
+  
   .media img {
     width: 25px;
   }
+  
   .scroll-btn {
     width: 70px;
     height: 70px;
   }
+  
   .scroll-btn i {
     font-size: 45px;
   }
@@ -316,37 +325,218 @@ header {
   header {
     height: 600px;
   }
-  .titre-global {
+  
+  .main-h2 {
     font-size: 35px;
     padding: 80px 30px 20px;
   }
+  
   .main-h1 {
     font-size: 80px;
     padding: 90px 30px 100px;
   }
+  
   .media {
     margin: 15px 0;
     width: 50px;
     height: 50px;
   }
+  
   .media img {
     width: 25px;
   }
+  
   .scroll-btn {
     width: 70px;
     height: 70px;
   }
+  
   .scroll-btn i {
     font-size: 45px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .titre-global {
+  .main-h2 {
     font-size: 25px;
     line-height: 40px;
   }
+  
   .main-h1 {
     font-size: 50px;
+  }
+}
+
+
+
+// ------------  Accueil Infos -----------
+
+.accueil-infos {
+  padding: 50px 20px;
+  background-color: $babyBlueEyes;
+  border-top: solid 1px #f1f1f1;
+  border-bottom: solid 1px #f1f1f1;
+}
+
+.separation {
+  margin: 0 auto 70px;
+  height: 2px;
+  width: 300px;
+  border-radius: 3px;
+  background: #000;
+  border: none;
+}
+
+.titre-global {
+  @extend %titre-global
+}
+
+.infos-container {
+  width: 80%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.infos {
+  font-size: 25px;
+  width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infos i {
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+.infos p {
+  margin-bottom: 50px;
+}
+
+// infos Accueil responsive
+
+@media screen and (max-width: 950px) {
+  .accueil-infos {
+    padding: 50px 20px;
+  }
+  .separation {
+    width: 200px;
+  }
+  .infos {
+    width: 300px;
+  }
+  .infos i {
+    font-size: 45px;
+  }
+  .infos-p {
+    font-size: 18px;
+  }
+}
+
+
+
+// ---------- Presentation entreprise -------------
+
+.presentation {
+  margin: 50px 0;
+}
+.presentation-container {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+  margin-bottom: 200px;
+  flex-wrap: wrap;
+}
+.txt-presentation {
+  width: 500px;
+  height: 500px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.txt-presentation p:nth-child(1) {
+  font-size: 50px;
+  font-weight: lighter;
+  padding: 0 0 20px 0;
+}
+.underline-blue {
+  width: 200px;
+  height: 3px;
+  background: $babyBlueEyes;
+  border: none;
+  margin: 0;
+}
+.txt-presentation p:nth-child(3) {
+  font-size: 30px;
+  padding: 20px 0 20px;
+}
+.txt-presentation p:nth-child(4) {
+  font-size: 30px;
+  padding: 20px 0 20px;
+}
+.txt-presentation a {
+  color: #000;
+  font-size: 20px;
+  padding: 20px 0;
+}
+.img-presentation {
+  border: 1px solid #000;
+  width: 500px;
+  height: 500px;
+  margin: 50px;
+}
+
+.img1 {
+  background: url(../../assets/img/pallet1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img2 {
+  background: url(../../assets/img/pallet2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img3 {
+  background: url(../../assets/img/pallet3.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 1300px) {
+  
+  .presentation-container {
+     width: 90%;
+  }
+  .txt-presentation {
+     height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .presentation-container {
+     margin-bottom: 100px;
+  }
+  .txt-presentation p:nth-child(1) {
+     font-size: 35px;
+  }
+  .img-presentation {
+     margin: 5px;
+  }
+  .txt-box-galerie {
+     margin: 5px;
   }
 }
