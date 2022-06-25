@@ -442,7 +442,6 @@ header {
 }
 
 
-
 // ---------- Presentation entreprise -------------
 
 .presentation {
@@ -454,7 +453,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   flex-wrap: wrap;
 }
 .txt-presentation {
@@ -464,6 +463,10 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.presentation strong {
+  color: $babyBlueEyes;
+  font-weight: bolder;
 }
 .txt-presentation p:nth-child(1) {
   font-size: 50px;
@@ -516,6 +519,8 @@ header {
   background-position: center;
 }
 
+
+
 @media screen and (max-width: 1300px) {
   
   .presentation-container {
@@ -538,5 +543,77 @@ header {
   }
   .txt-box-galerie {
      margin: 5px;
+  }
+}
+
+/* ------------ Section Parallax ------------- */
+
+.parallax {
+  background-image: url(../../assets/img/palette-parallax.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// -------- Contact ---------------
+
+
+.trois-contacts-container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.trois-contacts {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  width: 200px;
+  text-align: center;
+}
+.box span {
+  font-size: 20px;
+}
+
+.box img {
+  display: block;
+  margin: 0 auto 10px;
+  width: 70px;
+}
+
+
+
+// /* -------------- Contact ------------- */
+
+@media screen and (max-width: 900px){
+  .titre-contact{
+    margin: 30px 0 20px;
+    font-size: 40px;
+  }
+  .contact-sous-titre {
+    margin: 0 20px 20px;
+    font-size: 16px;
+  }
+  .trois-contacts {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .box {
+    margin: 20px 0;
+  }
+  .box img {
+    width: 50px;
   }
 }
