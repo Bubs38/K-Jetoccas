@@ -201,6 +201,7 @@ nav {
 header {
   background: url("../../assets/img/headerBG.jpeg") no-repeat center;
   height: 100vh;
+  min-height: -webkit-fill-available;
   background-size: cover;
   text-align: center;
   position: relative;
@@ -328,9 +329,9 @@ header {
 }
 
 @media screen and (max-width: 900px) {
-  // header {
-  //   height: 900px;
-  // }
+  header {
+    height: 650px;
+  }
   
   .main-h2 {
     font-size: 35px;
