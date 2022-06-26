@@ -196,6 +196,8 @@ nav {
 
 
 // ----------- Accueil -----------
+
+
 header {
   background: url("../../assets/img/headerBG.jpeg") no-repeat center;
   height: 100vh;
@@ -323,7 +325,7 @@ header {
 
 @media screen and (max-width: 900px) {
   header {
-    height: 600px;
+    height: 900px;
   }
   
   .main-h2 {
@@ -446,6 +448,7 @@ header {
 
 .presentation {
   margin: 50px 0;
+  padding-top: 100px;
 }
 .presentation-container {
   width: 1300px;
@@ -560,6 +563,119 @@ header {
   align-items: center;
 }
 
+
+
+// -------- Slider --------------
+
+.gallerie-photos {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider {
+  width: 100%;
+  height: 600px;
+  min-height: 300px;
+  margin: 0 auto 20px;
+  display: flex;
+}
+
+.galerie-photos h2 {
+  padding: 100px 25px 20px;
+}
+
+.container-slides {
+  width: 100%;
+  max-width: 1100px;
+  min-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container-slides img {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+  display: block;
+  transition: opacity 0.6s ease-in-out;
+}
+
+img.active {
+  opacity: 1;
+}
+.cont-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.btn-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #f1f1f1;
+  background: $gunmetal;
+  border: 1px solid #fff;
+  font-size: 25px;
+}
+
+// Slider responsive 
+
+@media screen and (max-width: 750px) {
+  .slider {
+    height: 550px;
+  }
+  .container-slides img {
+    height: 550px;
+  }
+  .galerie-photos .separation {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .slider {
+    height: 500px;
+  }
+  .container-slides img {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .slider {
+    height: 450px;
+  }
+  .container-slides img {
+    height: 450px;
+  }
+  .galerie-photos .separation {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .slider {
+    height: 400px;
+  }
+  .container-slides img {
+    height: 400px;
+  }
+  .galerie-photos .separation {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
 // -------- Contact ---------------
 
 
@@ -582,18 +698,56 @@ header {
   text-align: center;
 }
 .box span {
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 25px;
 }
 
 .box img {
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto 20px;
   width: 70px;
 }
 
+.contacts-infos {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 
+.contacts-plan iframe {
+  width: 100%;
+  height: 100%;
+}
 
-// /* -------------- Contact ------------- */
+.contacts-horaires {
+  background: $babyBlueEyes;
+  border-left: 1px solid #f1f1f1;
+}
+
+.contacts-horaires h3 {
+  font-size: 30px;
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.contacts-horaires-container {
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.contacts-horaires-container p {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+// /* Contact Responsive */
+
+@media screen and (max-width: 1150px) {
+  .contacts-infos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 @media screen and (max-width: 900px){
   .titre-contact{
@@ -616,4 +770,30 @@ header {
   .box img {
     width: 50px;
   }
+  .contacts-infos {
+    display: block;
+  }
+  .contacts-plan iframe {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .contacts-horaires h3 {
+    font-size: 25px;
+  }
+  .contacts-horaires-container p {
+    font-size: 17px;
+  }
+}
+
+
+// ----------- Footer -----------
+
+footer {
+  background: $gunmetal;
+  border-top: 1px solid #f1f1f1;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
 }

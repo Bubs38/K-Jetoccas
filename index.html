@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <title>kjetoccas</title>
 
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
+  <!-- <link rel="icon" type="image/ico" href="/favicon.ico"/> -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,9 +42,8 @@
     <div class="navlinks-container">
       <a href="#" aria-current="page">Accueil</a>
       <a href="#presentation">Presentation</a>
-      <a href="#">Achats / Ventes</a>
-      <a href="#">Nos Photos</a>
-      <a href="#">Contact</a>
+      <a href="#gallerie-photos">Nos Photos</a>
+      <a href="#contacts">Contact</a>
     </div>
 
     <div class="vide"></div>
@@ -54,9 +54,8 @@
     </div>
   </nav>
 
-  <!-- Accueil -->
 
-  <div class="nav-under"></div>
+  <!-- Accueil -->
 
   <header id="accueil">
     <div class="accueil-opacite">
@@ -66,17 +65,17 @@
       </div>
 
       <div class="scroll-btn">
-        <a href="#"><i class="fa-solid fa-chevron-down"></a></i>
+        <a href="#avantages"><i class="fa-solid fa-chevron-down"></a></i>
       </div>
 
       <div class="cont-medias">
         <div class="media">
-          <a href="#">
+          <a href="https://instagram.com/kjetoccas_grenoble?igshid=YmMyMTA2M2Y=">
             <img src="./assets/img/instagram.svg" alt="icon instagram">
           </a>
         </div>
         <div class="media">
-          <a href="#">
+          <a href="https://www.facebook.com/kjetoccas">
             <img src="./assets/img/facebook.svg" alt="icon facebook">
           </a>
         </div>
@@ -87,7 +86,7 @@
 
   <!-- Accueil Infos -->
 
-  <section class="accueil-infos">
+  <section class="accueil-infos" id="avantages">
     <h2 class="titre-global">Nos avantages</h2>
     <hr class="separation">
     <div class="infos-container">
@@ -113,8 +112,8 @@
 
   <!-- Présentation entreprise -->
 
-  <section class="presentation">
-    <h2  id="presentation" class="titre-global">Qui sommes nous ? </h2>
+  <section id="presentation" class="presentation">
+    <h2   class="titre-global">Qui sommes nous ? </h2>
     <hr class="separation">
   
       <div class="presentation-container">
@@ -150,34 +149,103 @@
 
   </section>
 
+
   <!-- Effet parallax  -->
 
   <section class="parallax"></section>
 
 
-  <!-- Contact -->
+  <!-- Slider -->
 
-  <div class="trois-contacts-container">
-    <div class="contact-title">
-      <h2 class="titre-global">Contact</h2>
-      <hr class="separation">
-    </div> 
-    <div class="trois-contacts">
-      <div class="box">
-        <img src="./assets/img/placeholder.svg" alt="localisation icon">
-        <span>17 rue des alliés,<br>M.I.N de Grenoble,<br>38100 GRENOBLE FRANCE</span>
-      </div>
-      <div class="box">
-        <img src="./assets/img/phone-call.svg" alt="téléphone icon">
-        <span>08 36 65 65 65</span>
-      </div>
-      <div class="box">
-        <img src="./assets/img/email.svg" alt="email icon">
-        <span>kjetoccas@gmail.com</span>
+  <section class="galerie-photos" id="gallerie-photos" >
+    <h2 class="titre-global">
+      Nos Photos
+    </h2>
+    <hr class="separation">
+    <div class="slider">
+      <div class="container-slides">
+        <img src="./assets/img/gallery/pallet-gallery-1.jpeg" class="active">
+        <img src="./assets/img/gallery/pallet-gallery-2.jpeg">
+        <img src="./assets/img/gallery/pallet-gallery-3.jpeg">
+        <img src="./assets/img/gallery/pallet-gallery-4.jpeg">
+        <img src="./assets/img/gallery/pallet-gallery-5.jpeg">
+        <img src="./assets/img/gallery/pallet-gallery-6.jpeg">
+        <img src="./assets/img/gallery/pallet-gallery-7.jpeg">
+        <img src="./assets/img/gallery/pallet-gallery-8.jpeg">
+        <img src="./assets/img/gallery/pallet-gallery-9.jpeg">
       </div>
     </div>
-  </div>
- 
+    <div class="cont-btn">
+      <div class="btn-nav left">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+      <div class="btn-nav right">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+
+  <section id="contacts">
+
+    <div class="trois-contacts-container">
+      <div class="contact-title">
+        <h2 class="titre-global">Contact</h2>
+        <hr class="separation">
+      </div> 
+      <div class="trois-contacts">
+        <div class="box">
+          <img src="./assets/img/placeholder.svg" alt="localisation icon">
+          <span>17 rue des alliés,<br>M.I.N de Grenoble,<br>38100 GRENOBLE FRANCE</span>
+        </div>
+        <div class="box">
+          <img src="./assets/img/phone-call.svg" alt="téléphone icon">
+          <span>08 36 65 65 65</span>
+        </div>
+        <div class="box">
+          <img src="./assets/img/email.svg" alt="email icon">
+          <span>kjetoccas@gmail.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacts-infos">
+      <div class="contacts-plan">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2852.0779390398498!2d5.715804572353987!3d45.170694475203454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af4a354c9769b%3A0x7e858203a143ef17!2s117%20Rue%20des%20Alli%C3%A9s%2C%2038100%20Grenoble!5e0!3m2!1sfr!2sfr!4v1650458824845!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="contacts-horaires">
+        <h3>Horaires d'ouverture</h3>
+        <div class="contacts-horaires-container">
+          <div class="jours">
+            <p>Lundi</p>
+            <p>Mardi</p>
+            <p>Mecredi</p>
+            <p>jeudi</p>
+            <p>Vendredi</p>
+            <p>Samedi</p>
+            <p>Dimanche</p>
+          </div>
+          <div class="ouverture">
+            <p>7h à 12h et 14h à 16h</p>
+            <p>7h à 12h et 14h à 16h</p>
+            <p>7h à 12h et 14h à 16h</p>
+            <p>7h à 12h et 14h à 16h</p>
+            <p>7h à 12h et 14h à 16h</p>
+            <p>Fermé</p>
+            <p>Fermé</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2022 by Bubs</p>
+  </footer>
 
   <script src="./scripts/app.js">
   </script>

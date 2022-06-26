@@ -20,10 +20,10 @@ new ResizeObserver(entries => {
   } else {
     navLinksContainer.style.transition = "none";
   }
-}).observe(document.body)
+}).observe(document.body);
 
 
-// Slider acceuil
+// --------- Slider -------------
 
 const itemsSlide = document.querySelectorAll('.container-slides img');
 const nbSlide = itemsSlide.length;
@@ -60,4 +60,3 @@ function slidePrecedente(){
   }
   itemsSlide[count].classList.add('active');
 }
-
